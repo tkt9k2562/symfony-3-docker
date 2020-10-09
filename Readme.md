@@ -10,6 +10,22 @@
 1. docker-compose.yml
 2. nginx
 3. php
+4. db (等等需更改密碼為 env)
 
 #### Run
-1. sudo docker-compose up -d
+1. 
+重新建置 (無cache)
+sudo docker-compose build --no-cache
+
+啟動
+sudo docker-compose up -d 
+
+關閉
+sudo docker-compose down
+
+2. 
+docker-compose exec db bash 
+(或著 docker exec -it symfony-3-docker_db_1 bash)
+
+3. 
+docker-compose exec php bash
