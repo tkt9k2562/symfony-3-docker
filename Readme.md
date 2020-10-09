@@ -62,3 +62,7 @@ php bin/console doctrine:database:drop --force
 php bin/console doctrine:database:create
 因為一開始就建立好 database 了
 
+可使用 localhost:8000 開啟 phpmyadmin
+帳號 root 
+密碼 symfony_db
+(可見 symfony/app/config/parameters.yml)

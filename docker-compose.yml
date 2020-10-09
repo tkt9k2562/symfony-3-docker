@@ -39,7 +39,21 @@ services:
             - 3306:3306
         networks:
             - symfony
-
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: symfony-3-phpmyadmin
+        restart: always
+        depends_on:
+            - db
+        ports:
+            - 8000:80 # 使用 localhost:8000 登入 , 內部使用 80 port 接 nginx
+        environment:
+            PMA_HOST: db
+            MYSQL_ROOT_PASSWORD: symfony_db # ${MYSQL_ROOT_PASSWORD}
+        volumes:
+            - /sessions
+        networks:
+            - symfony
 volumes:
     db_app:
 
