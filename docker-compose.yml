@@ -9,7 +9,7 @@ services:
                 TIMEZONE: ${TIMEZONE}
         environment:
             APP_ENV: dev
-            DATABASE_URL: mysql://root:root@mysql:3306/symfony_db?serverVersion=8.0 # 測試中 mysql://root:root@mysql:3306/symfony_db?serverVersion=5.7
+            DATABASE_URL: mysql://root:symfony_db@db:3306/symfony_db?serverVersion=8.0 # 測試中 mysql://symfony_user:symfony_password@db:3306/symfony_db?serverVersion=8.0
         volumes:
             - ./symfony/:/var/www/symfony/
         networks:

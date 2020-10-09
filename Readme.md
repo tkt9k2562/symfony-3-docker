@@ -29,3 +29,15 @@ docker-compose exec db bash
 
 3. 
 docker-compose exec php bash
+(或著 docker exec -it symfony-3-docker_php_1 bash)
+
+curl -sS https://get.symfony.com/cli/installer | bash
+mv /root/.symfony/bin/symfony /usr/local/bin/symfony
+
+使用 symfony new --help 檢查指令
+symfony new symfony --dir=/var/www/symfony --version=3.4
+
+建議"不要"使用 (因為外層已經有 git, 內層不用 git, 直接安裝沒問題的)
+git config --global user.email tkt9k2562@gmail.com
+git config --global user.name tkt9k2562
+
