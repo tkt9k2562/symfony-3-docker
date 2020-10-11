@@ -11,6 +11,7 @@
 2. nginx
 3. php
 4. db (等等需更改密碼為 env)
+5. 最後 , phpmyadmin localhost:8000 , symfony localhost:8001
 
 #### Run
 1. 

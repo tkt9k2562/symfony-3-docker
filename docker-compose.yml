@@ -21,7 +21,8 @@ services:
         volumes:
             - ./symfony/:/var/www/symfony/
         ports:
-            - 80:80
+            - 80:80 # phpmyadmin , 使用 localhost:8000 測試
+            - 8001:8001 # symfony , 使用 localhost:8001 測試
         networks:
             - symfony
     db:
