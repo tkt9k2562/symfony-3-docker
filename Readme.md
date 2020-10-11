@@ -67,3 +67,7 @@ php bin/console doctrine:database:create
 帳號 root 
 密碼 symfony_db
 (可見 symfony/app/config/parameters.yml)
+
+#### Composer
+1. 
+composer require doctrine/doctrine-migrations-bundle "^1.3"
